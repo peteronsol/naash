@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Jersey+10&display=swap");
+
+body {
+  background-color: #0c0f13;
+}
+
+.jail {
+  color: rgb(247, 33, 33);
+}
+.title {
+  font-family: "Jersey 10", sans-serif;
+  font-weight: 400 !important;
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.videos {
+  width: 50rem;
+  height: auto;
+  border-radius: 0.5rem;
+}
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0;
+}
+
+@media (max-width: 768px) {
+  .videos {
+    width: 18rem;
+    height: auto;
+  }
+  .title {
+    font-size: 2rem;
+    padding: 0 25px;
+  }
+}
