@@ -15,12 +15,13 @@ function App() {
           <video
             playsInline
             muted
-            preload="yes"
+            preload="none" // Change preload to "none" as it's redundant with lazy loading
             autoPlay
             loop
             id="vjs_video_739_html5_api"
             className="videos"
             data-setup='{"autoplay":"any"}'
+            loading="lazy" // Add lazy loading attribute
           >
             <source src={video1} type="video/mp4" />
           </video>
