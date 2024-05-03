@@ -1,8 +1,23 @@
 import "./App.css";
+import { useRef } from "react";
 import { Navbar } from "./components/Navbar";
 import video1 from "./assets/video-1.mp4";
 import video2 from "./assets/video-2.mp4";
 function App() {
+  const styledTextRef = useRef(null);
+
+  const copyToClipboard = () => {
+    const textToCopy = styledTextRef.current.innerText;
+    navigator.clipboard
+      .writeText(textToCopy)
+      .then(() => {
+        alert("Copied to clipboard");
+      })
+      .catch((error) => {
+        console.error("Failed to copy: ", error);
+      });
+  };
+
   return (
     <>
       <Navbar />
@@ -11,6 +26,14 @@ function App() {
           A video with Naash can give you a trip to the{" "}
           <span className="jail">jail</span>
         </h1>
+        <div className="text-copy">
+          <div ref={styledTextRef} className="styled-text">
+            CdFU9ppVBBpMKanFNTkN5vS6Z9p9cBatqJ2bvN9kBpBu
+          </div>
+          <button className="copy-button" onClick={copyToClipboard}>
+            Copy to Clipboard
+          </button>
+        </div>
         <div className="video-container">
           <video
             playsInline

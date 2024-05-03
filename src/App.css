@@ -3,6 +3,40 @@
 body {
   background-color: #0c0f13;
 }
+.text-copy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.styled-text {
+  font-size: 15px;
+  font-weight: bold;
+  background-color: #f0f0f0;
+  border: 2px solid #333;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 80%;
+  text-align: center !important;
+}
+
+.copy-button {
+  font-size: 15px;
+  padding: 10px 10px;
+  height: 50px;
+  width: auto;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 1px 1px 0px 2px rgba (0, 0, 0, 0.3);
+  background: rgb(142, 255, 100);
+  cursor: pointer;
+}
+
+.copy-button:hover {
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+}
 
 .jail {
   color: rgb(247, 33, 33);
@@ -29,6 +63,16 @@ body {
 }
 
 @media (max-width: 768px) {
+  .text-copy {
+    flex-direction: column;
+  }
+  .styled-text {
+    font-size: 10px;
+  }
+  .copy-button {
+    font-size: 10px;
+    height: 35px;
+  }
   .videos {
     width: 18rem;
     height: auto;

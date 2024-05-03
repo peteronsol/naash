@@ -15,25 +15,16 @@ export const Navbar = () => {
         </label>
       </div>
       <div className="nav-links">
-        <a href="//github.io/jo_geek" target="_blank" rel="noopener noreferrer">
-          Home
-        </a>
+        <a href="#">Home</a>
         <a
-          href="http://stackoverflow.com/users/4084003/"
+          href="https://pump.fun/CdFU9ppVBBpMKanFNTkN5vS6Z9p9cBatqJ2bvN9kBpBu"
           target="_blank"
           rel="noopener noreferrer"
         >
           DEX
         </a>
         <a
-          href="https://in.linkedin.com/in/jonesvinothjoseph"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          CA(Contract Address)
-        </a>
-        <a
-          href="https://codepen.io/jo_Geek/"
+          href="https://t.me/naashdaily"
           target="_blank"
           rel="noopener noreferrer"
         >
